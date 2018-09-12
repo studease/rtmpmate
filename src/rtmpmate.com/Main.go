@@ -1,42 +1,57 @@
 package main
 
 import (
-	"fmt"
-	"rtmpmate.com/net/http/HTTPListener"
-	"rtmpmate.com/net/rtmp/RTMPListener"
-	"rtmpmate.com/net/websocket/WebSocketListener"
+	"runtime"
+	"studease.cn/events/ErrorEvent"
+	"studease.cn/events/Event"
+	"studease.cn/events/SignalEvent"
+	_ "studease.cn/net/chat"
+	"studease.cn/net/http"
+	"studease.cn/utils"
+	"studease.cn/utils/key"
+	"studease.cn/utils/license"
+	"studease.cn/utils/log"
+	"studease.cn/utils/log/level"
+	"studease.cn/utils/signal"
 )
 
-const _NAME_ string = "rtmpmate"
-const _VERSION_ string = "0.0.30"
+const (
+	_NAME    = "rtmpmate"
+	_VERSION = "0.0.31"
+	_CONF    = "conf/mated.conf"
+)
 
 func main() {
-	fmt.Printf("SERVER: %s\n", _NAME_)
-	fmt.Printf("VERSION: %s\n\n", _VERSION_)
+	cnf := make(utils.Conf)
+	cnf.Open(_CONF)
 
-	httpln, err := HTTPListener.New()
-	if err != nil {
-		fmt.Printf("Failed to create HTTPListener: %v.\n", err)
-		return
+	log.New(cnf[key.LOG].(string), int(cnf[key.DEBUG].(float64)))
+	log.Info("==== %s/%s ====", _NAME, _VERSION)
+	log.Info("runtime: %s %s", runtime.GOOS, runtime.Version())
+
+	lic, _ := license.New()
+	lic.AddEventListener(Event.COMPLETE, onLicenseComplete, 0)
+	lic.AddEventListener(ErrorEvent.ERROR, onLicenseError, 0)
+	lic.Check(cnf[key.LICENSE].(string))
+
+	http.Listen(_NAME+"/"+_VERSION, utils.Conf(cnf[key.HTTP].(map[string]interface{})))
+
+	sig := signal.Default()
+	sig.AddEventListener(SignalEvent.SIGNAL, onSignal, 0)
+	sig.Wait()
+}
+
+func onLicenseComplete(e *Event.Event) {
+	log.Debug(level.INFO, "license check complete")
+}
+
+func onLicenseError(e *ErrorEvent.ErrorEvent) {
+	log.Fatal("license check error")
+}
+
+func onSignal(e *SignalEvent.SignalEvent) {
+	switch e.Code {
+	case signal.EXIT:
+		log.Fatal("signal %d", e.Code)
 	}
-
-	wsln, err := WebSocketListener.New()
-	if err != nil {
-		fmt.Printf("Failed to create HTTPListener: %v.\n", err)
-		return
-	}
-
-	httpln.HandleWebSocket(wsln.Handler)
-
-	go httpln.Listen("tcp4", 80)
-
-	rtmpln, err := RTMPListener.New()
-	if err != nil {
-		fmt.Printf("Failed to create RTMPListener: %v.\n", err)
-		return
-	}
-
-	rtmpln.Listen("tcp4", 1935)
-
-	fmt.Printf("Server exiting...\n")
 }

@@ -1,0 +1,12 @@
+{
+	"user": {
+		"id":   "1",
+		"name": "tony",
+		"icon": "/images/icon/tony.png",
+		"role":  64
+	},
+	"channel": {
+		"id":   "001",
+		"stat":  0
+	}
+}
