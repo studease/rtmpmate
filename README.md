@@ -8,21 +8,19 @@
 
 > QQ群：528109813
 
-This is a rtmp server, transforming rtmp packages into fmp4 stream.
-
-(Working on...)
+This is a websocket chat server, and rtmp media server which transforming rtmp packages into fmp4 stream.
 
 
-## Linux Static Builds
+## Static Builds
 ----------------------
-
-#### 32-bit and 64-bit for kernel 3.9 and above
 
 > x86: [rtmpmate-x86-latest-static.zip](http://studease.cn/static/rtmpmate-x86-latest-static.zip)
 
 
 ## Client
 ---------
+
+[playease.js https://github.com/studease/playease](https://github.com/studease/playease)
 
 [chatease.js https://github.com/studease/chatease](https://github.com/studease/chatease)
 
