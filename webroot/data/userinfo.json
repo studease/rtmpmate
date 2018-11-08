@@ -1,8 +1,8 @@
 {
 	"user": {
 		"id":   "1",
-		"name": "tony",
-		"icon": "/images/icon/tony.png",
+		"name": "admin",
+		"icon": "http://studease.cn/images/icon/admin.png",
 		"role":  64
 	},
 	"channel": {
