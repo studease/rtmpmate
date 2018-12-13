@@ -11,34 +11,6 @@
 This is not only a websocket chat server, but also a functional media server.
 
 
-## Environment
---------------
-
-> linux
-
-/etc/profile: CGO_ENABLED=1
-
-$ source /etc/profile
-
-$ sudo yum install glibc-devel.i686 libstdc++-devel.i686
-
-> windows
-
-http://strawberryperl.com/
-
-http://strawberryperl.com/download/5.28.0.1/strawberry-perl-5.28.0.1-32bit.msi
-
-
-## Requirement
---------------
-
-> sqlite3
-
-$ go get github.com/mattn/go-sqlite3
-
-$ go install github.com/mattn/go-sqlite3
-
-
 ## Static Builds
 ----------------
 
