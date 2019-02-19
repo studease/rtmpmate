@@ -8,8 +8,8 @@
 
 > QQ群：528109813
 
-This is not only a websocket chat server, but also a functional media server.
-
+This is not only a websocket chat server, but also a functional media server, supports 
+RTMP/FLV/HLS/MPEG-DASH/fMP4.
 
 ## Static Builds
 ----------------
