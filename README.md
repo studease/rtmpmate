@@ -2,14 +2,22 @@
 
 > [[domain] http://studease.cn](http://studease.cn/rtmpmate.html)
 
-> [[source] https://github.com/studease/rtmpmate](https://github.com/studease/rtmpmate)
+> [[中文] https://blog.csdn.net/icysky1989/article/details/88946642](https://blog.csdn.net/icysky1989/article/details/88946642)
 
 > 公众号：STUDEASE
 
 > QQ群：528109813
 
-This is not only a websocket chat server, but also a functional media server, supports 
-RTMP/FLV/HLS/MPEG-DASH/fMP4.
+This is a modern live streaming server. It supports:
+
+* **RTMP, HTTP-FLV, HTTP-fMP4, MPEG-DASH, HLS**
+* **FLV Recording (Remote Controllable), Live Playback**
+* **WebSocket Chat (Danmu)**
+* **Event Report**
+* **Origin-Edge, Proxy, Load Balancing**
+* **CORS Control (Origin Protection)**
+* **Customized Development (Extra Charge)**
+
 
 ## Static Builds
 ----------------
