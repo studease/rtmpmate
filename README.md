@@ -10,7 +10,7 @@
 
 This is a modern live streaming server. It supports:
 
-* **RTMP, HTTP-FLV, HTTP-fMP4, MPEG-DASH, HLS**
+* **RTMP, RTSP (TCP), HTTP-FLV, HTTP-fMP4, MPEG-DASH, HLS**
 * **FLV Recording (Remote Controllable), Live Playback**
 * **WebSocket Chat (Danmu)**
 * **Event Report**
