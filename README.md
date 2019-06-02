@@ -8,6 +8,8 @@
 
 > QQ群：528109813
 
+> Skype: live:670292548
+
 This is a modern live streaming server. It supports:
 
 * **RTMP, RTSP (TCP), HTTP/WS-FLV, HTTP/WS-fMP4, MPEG-DASH, HLS**
