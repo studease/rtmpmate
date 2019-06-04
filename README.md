@@ -32,13 +32,15 @@ This is a modern live streaming server. It supports:
 
 > Debian: [rtmpmate-debian-x86_64-latest.zip](http://studease.cn/static/rtmpmate-debian-x86_64-latest.zip)
 
+> MacOS: [rtmpmate-macos-x86_64-latest.zip](http://studease.cn/static/rtmpmate-macos-x86_64-latest.zip)
+
 
 ## CDKeys for Free
 ------------------
 
 * ~~**1031-9276-8109-8226-4292**~~
 * ~~**1031-4292-0781-0315-6349**~~
-* **1031-9818-4656-4110-5434**
+* ~~**1031-9818-4656-4110-5434**~~
 * ~~**1031-4564-1074-4211-6767**~~
 * **1031-3171-4745-6729-3840**
 * **1031-2627-3062-4770-3450**
