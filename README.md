@@ -26,24 +26,26 @@ This is a modern live streaming server. It supports:
 
 #### x86:
 
-> Windows: [rtmpmate-win32-latest.zip](http://studease.cn/static/rtmpmate-win32-latest.zip)
+> Windows: [rtmpmate-windows-x86_64-latest.zip](http://studease.cn/static/rtmpmate-windows-x86_64-latest.zip)
 
-> Linux: [rtmpmate-linux-latest.zip](http://studease.cn/static/rtmpmate-linux-latest.zip)
+> CentOS: [rtmpmate-centos-x86_64-latest.zip](http://studease.cn/static/rtmpmate-centos-x86_64-latest.zip)
+
+> Debian: [rtmpmate-debian-x86_64-latest.zip](http://studease.cn/static/rtmpmate-debian-x86_64-latest.zip)
 
 
 ## CDKeys for Free
 ------------------
 
-* ~~**1031-1258-3831-5825-6283**~~
-* ~~**1031-6800-6732-1714-5786**~~
-* ~~**1031-8775-3856-0415-5763**~~
-* ~~**1031-0017-5051-2068-5550**~~
-* ~~**1031-7326-0358-2167-3800**~~
-* ~~**1031-4745-6253-2376-8724**~~
-* **1031-3868-7381-0446-4614**
-* **1031-7323-0463-2336-2410**
-* ~~**1031-6686-5722-7535-4774**~~
 * ~~**1031-9276-8109-8226-4292**~~
+* ~~**1031-4292-0781-0315-6349**~~
+* **1031-9818-4656-4110-5434**
+* ~~**1031-4564-1074-4211-6767**~~
+* **1031-3171-4745-6729-3840**
+* **1031-2627-3062-4770-3450**
+* **1031-5535-5137-8978-3598**
+* **1031-2465-6923-4816-6569**
+* **1031-8282-5020-9232-3192**
+* **1031-9992-5140-5134-4560**
 
 
 ## Clients
