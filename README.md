@@ -24,15 +24,7 @@ This is a modern live streaming server. It supports:
 ## Static Builds
 ----------------
 
-#### x86:
-
-> Windows: [rtmpmate-windows-x86_64-latest.zip](http://studease.cn/static/rtmpmate-windows-x86_64-latest.zip)
-
-> CentOS: [rtmpmate-centos-x86_64-latest.zip](http://studease.cn/static/rtmpmate-centos-x86_64-latest.zip)
-
-> Debian: [rtmpmate-debian-x86_64-latest.zip](http://studease.cn/static/rtmpmate-debian-x86_64-latest.zip)
-
-> MacOS: [rtmpmate-macos-x86_64-latest.zip](http://studease.cn/static/rtmpmate-macos-x86_64-latest.zip)
+[Download](https://github.com/studease/rtmpmate/releases)
 
 
 ## CDKeys for Free
