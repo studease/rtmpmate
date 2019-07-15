@@ -24,7 +24,7 @@ This is a modern live streaming server. It supports:
 ## Static Builds
 ----------------
 
-[Download](https://github.com/studease/rtmpmate/releases)
+[Download Page](https://github.com/studease/rtmpmate/releases)
 
 
 ## CDKeys for Free
