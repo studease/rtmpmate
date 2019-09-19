@@ -1,0 +1,33 @@
+<Admin>
+	<!-- This tag specifies to which admin connections we respond to. -->
+	<!-- This is specified as a comma delimited list of               -->
+	<!-- hostnames, domain names, and full or partial ip address.     -->
+	<!-- For example:                                                 -->
+	<!-- <Allow>x.foo.com, foo.com, 10.60.1.133, 10.60</Allow> or     -->
+	<!-- <Allow>*</Allow>                                             -->
+	<Allow>*</Allow>
+	
+	<!-- This tag specifies to which admin connections not to         -->
+	<!-- respond to. This is specified as a comma delimited list      -->
+	<!-- of hostnames, domain names, and full or partial ip address.  -->
+	<!-- For example:                                                 -->
+	<!-- <Deny>x.foo.com, foo.com, 10.60.1.133, 10.60</Deny> or       -->
+	<!-- <Deny>*</Deny>                                               -->
+	<Deny></Deny>
+	
+	<!-- Execute user interfaces through HTTP requests.               -->
+	<!-- For example:                                                 -->
+	<!--     /rtmp/stat, /chat/stat                                   -->
+	<UserInterface enable="true">
+		<Allow>*</Allow>
+		<Deny></Deny>
+	</UserInterface>
+	
+	<!-- Execute admin commands through HTTP requests.                -->
+	<!-- For example:                                                 -->
+	<!--     /rtmp/control/record/start, /rtmp/control/record/stop    -->
+	<CommandInterface enable="true">
+		<Allow>127.0.0.1</Allow>
+		<Deny></Deny>
+	</CommandInterface>
+</Admin>

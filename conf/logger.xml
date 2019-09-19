@@ -1,0 +1,28 @@
+<Logger>
+	<!-- Directory in which log files will be placed.                             -->
+	<Directory>logs/</Directory>
+
+	<Files level="debug">
+		<Debug>2006-01-02 15-04-05.000.log</Debug>
+		<!-- <Error>2006-01-02 15-04-05.000.error.log</Error> -->
+	</Files>
+
+	<!-- Level could be one of "trace", "debug[N]", "info", "warn", "error".      -->
+	<!-- N could be 0-7, and "debug0" equals to "debug".                          -->
+	<Level>debug</Level>
+
+	<Rotation>
+		<!-- Maximum file size in kilobytes (1024 bytes).                         -->
+		<MaxSize>10240</MaxSize>
+
+		<!-- Rotation Time, there are 2 types:                                    -->
+		<!-- If type="daily", rotation only occurs every 24 hours, and the format -->
+		<!-- is hh:mm, for example 00:00 will rotates every midnight;             -->
+		<!-- If type="duration", rotation occurs when the duration of the log 	  -->
+		<!-- exceed a certain length, duration takes a number in minutes.         -->
+		<Schedule type="daily">00:00</Schedule>
+
+		<!-- Max number of log files to keep.                                     -->
+		<History>5</History>
+	</Rotation>
+</Logger>
