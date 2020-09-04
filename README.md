@@ -1,10 +1,10 @@
 ﻿# rtmpmate 1.x
 
-> [[domain] http://studease.cn](http://studease.cn/rtmpmate.html)
-> [[中文] https://blog.csdn.net/icysky1989/article/details/88946642](https://blog.csdn.net/icysky1989/article/details/88946642)
-> 公众号：STUDEASE
-> QQ群：528109813
-> Skype: live:670292548
+> [[domain] http://studease.cn](http://studease.cn/rtmpmate.html)  
+> [[中文] https://blog.csdn.net/icysky1989/article/details/88946642](https://blog.csdn.net/icysky1989/article/details/88946642)  
+> 公众号：STUDEASE  
+> QQ群：528109813  
+> Skype: live:670292548  
 
 This is not only a modern Live Streaming Server, but also a WebSocket IM Framework and Distributed File Sync System. It has event-driven architecture, which removes a lot of potential flakiness.
 
@@ -37,11 +37,11 @@ This is not only a modern Live Streaming Server, but also a WebSocket IM Framewo
   - [ ] WebRTC
 
 - Features
-  - [ ] Backend API.
+  - Backend API.
     - [ ] Remote control interface (RCI) of FLV and fMP4 DVR.
     - [ ] RTMP stats of server and application.
-  - Cross-Origin Resource Sharing (CORS).
-  - Cluster, Proxy, Load Balance.
+  - [ ] Cross-Origin Resource Sharing (CORS).
+  - [ ] Cluster, Proxy, Load Balance.
   - IEventHandler module.
     - [ ] HttpHandler
     - [ ] ProcHandler
