@@ -37,12 +37,12 @@ This is not only a modern Live Streaming Server, but also a WebSocket IM Framewo
   - [ ] WebRTC
 
 - Features
-  - Backend API.
+  - [ ] Backend API.
     - [ ] Remote control interface (RCI) of FLV and fMP4 DVR.
     - [ ] RTMP stats of server and application.
   - [ ] Cross-Origin Resource Sharing (CORS).
   - [ ] Cluster, Proxy, Load Balance.
-  - IEventHandler module.
+  - [ ] IEventHandler module.
     - [ ] HttpHandler
     - [ ] ProcHandler
 
