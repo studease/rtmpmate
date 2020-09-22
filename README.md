@@ -30,8 +30,8 @@ This is not only a modern Live Streaming Server, but also a WebSocket IM Framewo
 - Outputs
   - [x] RTMP
   - [ ] RTSP over TCP
-  - [ ] HTTP/WS-FLV
-  - [ ] HTTP/WS-fMP4
+  - [x] HTTP/WS-FLV
+  - [x] HTTP/WS-fMP4
   - [ ] MPEG-DASH (CMAF)
   - [ ] HLS (CMAF)
   - [ ] WebRTC
